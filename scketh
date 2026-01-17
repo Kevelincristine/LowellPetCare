@@ -1,0 +1,49 @@
+header 
+{
+   icone  mais menu
+}
+menu hambúrguer {
+    serviços
+    sobre
+    estrutura
+    contato
+    (botão agendar consulta)
+}
+
+hero section
+h1 ->  Lowell Pet Care 
+{
+    Excelência e cuidado veterinário
+Atendimento moderno, ético e humanizado.
+[         Agendar consulta             ]
+                 img?
+}
+serviços{
+    icone + h2
+    descrição curta
+}
+diferenciais{
+    ✓ Atendimento humanizado
+✓ Tecnologia moderna
+✓ Profissionais especializados
+✓ Ambiente seguro 
+- animação em cada um usando hover
+}
+sobre a crinica{
+    [Imagem] -- se possivel colocar varias imagem e fazer um sistema mudar imagem por um botão
+    [Título]
+    [Texto]
+}
+depoimentos{
+    ★★★★★
+    Texto
+    — Nome
+}
+footer{
+ Nome da clínica
+Endereço
+Telefone
+Horário
+Redes sociais
+
+}
