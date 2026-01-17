@@ -24,4 +24,55 @@
   --font-body: 'Inter', sans-serif;
 
 }
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vw;
+  font-family: var(--font-body);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+header h1 {
+  color: var(--color-primary);
+  font-family:var(--font-heading);
+}
+.menu-toggle { 
+  
+  font-size: 2rem;
+  border: none;
+  color: var(--color-primary);
+  background-color: var(--color-bg-main);
+  
+}
+.nav-menu{
+  display: none;
+ 
+}
+.nav-menu.active {
+    display: block;
+    background-color: var(--color-bg-alt);
+    padding: 10px;
+  
+ 
+    
+}
+.menu-toggle i {
+  font-size: 26px;
+  transition: transform 0.6s ease;
+
+}
+.menu-toggle i.open{
+   transform: rotate(90deg);
+}
 
