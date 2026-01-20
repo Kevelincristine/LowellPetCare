@@ -253,16 +253,22 @@ main{
 .differ-container li:hover{
   background-color: var(--color-primary);
 }
+
+
 #about-clinic h2{
   color: var(--color-primary);
   margin-top: 40px;
   font-size: xx-large;
+  margin-left: 1em;
 }
 .about-text{
   text-align: center;
   font-size:large;
   padding: 10px;
   color: var(--color-primary);
+  border: 3px solid var(--color-secondary);
+  margin: 10px;
+  border-radius: 10px;
 }
 .about-slider{
   position: relative;
@@ -285,11 +291,11 @@ main{
   font-size: clamp(1.5rem, 4vw, 2rem);
   padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s,;
 }
 .arrow:hover{
-  background-color: var(--color-border);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  
 }
 .left{
   grid-column: 1;
