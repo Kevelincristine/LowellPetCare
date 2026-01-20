@@ -253,51 +253,65 @@ main{
 .differ-container li:hover{
   background-color: var(--color-primary);
 }
-
+#about-clinic {
+  background-color: var(--color-primary) ;
+  padding: 20px;
+  width: 100%;
+  
+}
 
 #about-clinic h2{
-  color: var(--color-primary);
+  color: var(--color-secondary);
   margin-top: 40px;
   font-size: xx-large;
   margin-left: 1em;
+  padding: 10px;
+  text-decoration:underline;
+  
 }
 .about-text{
   text-align: center;
   font-size:large;
   padding: 10px;
-  color: var(--color-primary);
+  color: var(--color-text-main);
+  background-color: var(--color-secondary);
   border: 3px solid var(--color-secondary);
   margin: 10px;
   border-radius: 10px;
+ 
 }
 .about-slider{
+  width: 100%;
   position: relative;
   max-width: 500px;
   margin: auto;
   display: grid;
   grid-template-columns: auto 1fr auto;
+  gap: 20px;
 
-  
 }
 .slider-image {
   width: 100%;
   grid-column: 2;
+   border-radius: 20px;
 }
 .arrow{
   position: relative;
-  
-  background-color: var(--color-secondary);
   color: var(--color-text-inverse);
+  background-color: var(--color-secondary);
   border: none;
   font-size: clamp(1.5rem, 4vw, 2rem);
   padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: background-color 0.3s,;
-}
-.arrow:hover{
-  background-color: var(--color-primary);
+   border-radius: 20px;
+   transition: background-color 0.5s, color 0.5s;
   
 }
+.arrow:hover{
+  background-color: var(--color-border);
+  color: var(--color-hover);
+}
+
 .left{
   grid-column: 1;
 }
