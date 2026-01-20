@@ -276,6 +276,7 @@ main{
   margin: auto;
   display: grid;
   grid-template-columns: auto 1fr auto;
+  border-radius: 10px;
   
 }
 .slider-image {
