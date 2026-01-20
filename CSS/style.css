@@ -11,7 +11,7 @@
 
   /* Backgrounds */
   --color-bg-main: #FFFFFF;     
-  --color-bg-alt: #eeeeee;     
+  --color-bg-alt: #f3f3f3;     
 
   /* Text */
   --color-text-main: #2E2E2E;   
@@ -252,4 +252,42 @@ main{
 }
 .differ-container li:hover{
   background-color: var(--color-primary);
+}
+#about-clinic{
+  color: var(--color-primary);
+  margin: 50px;
+  font-size: larger;
+}
+.about-slider{
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  
+}
+.slider-image {
+  width: 100%;
+  grid-column: 2;
+}
+.arrow{
+  position: relative;
+  
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
+  border: none;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.arrow:hover{
+  background-color: var(--color-border);
+  color: var(--color-primary);
+}
+.left{
+  grid-column: 1;
+}
+.right{
+  grid-column: 3;
 }
