@@ -44,7 +44,14 @@ header{
   justify-content: space-around;
   align-items: center;
   margin: 10px;
+  
   min-height: 64px;
+  border-radius: 10px;
+
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg-main);
+  z-index: 1200;
  
 }
 header h1 {
@@ -95,6 +102,8 @@ header h1 {
 }
 .nav-menu li {
   list-style: none;
+  width: 100%;
+  text-align: center;
 }
 .nav-menu a {
   text-decoration: none;
@@ -102,22 +111,22 @@ header h1 {
  
   font-size: 1.6rem;
   text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.295);
+  display: block;
+  width: 100%;
+  padding: 12px 0;
 }
- #appointment{
-
+#appointment{
   padding: 10px;
-  border-radius: 5px;
-  
 }
- #appointment a{
+#appointment a{
   color: var(--color-primary);
-  text-shadow: none;
-  font-weight: bold;
+  border-radius: 6px;
+  padding: 12px 0;
+}
 
-
- }
 main{
   background-color: var(--color-bg-alt);
+   padding-top: 80px;
 }
 #hero-section{
   display: flex;
@@ -233,6 +242,7 @@ main{
   margin: 10px;
   font-size: xx-large;
   color: var(--color-primary);
+  
 }
 .differ-container ul{
   padding: 20px;
@@ -257,34 +267,42 @@ main{
   background-color: var(--color-primary) ;
   padding: 20px;
   width: 100%;
+  margin-top:40px ;
   
 }
 
 #about-clinic h2{
   color: var(--color-secondary);
-  margin-top: 40px;
+ 
   font-size: xx-large;
   margin-left: 1em;
   padding: 10px;
-  text-decoration:underline;
+  font-family: var(--font-heading);
+  
   
 }
 .about-text{
   text-align: center;
-  font-size:large;
+  font-size:x-large;
   padding: 10px;
-  color: var(--color-text-main);
-  background-color: var(--color-secondary);
-  border: 3px solid var(--color-secondary);
+  color: var(--color-text-inverse);
+  
+  
   margin: 10px;
   border-radius: 10px;
  
 }
+.about-text #details{
+  background-color: rgba(0, 0, 0, 0.247);
+  border-radius: 5px;
+ 
+
+}
 .about-slider{
   width: 100%;
   position: relative;
-  max-width: 500px;
-  margin: auto;
+  max-width: 100%;
+  margin: 20px 0;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 20px;
@@ -317,4 +335,113 @@ main{
 }
 .right{
   grid-column: 3;
+}
+#testimonials {
+  padding: 40px 20px;
+  background-color: var(--color-bg-alt);
+  text-align: center;
+}
+#testimonials h2{
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  margin-bottom: 30px;
+  font-size: xx-large;
+}
+.testimonials-container{
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+.comments {
+  background-color: var(--color-bg-main);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5 ease;
+}
+.comments.active{
+  display: block;
+  opacity: 1;
+}
+.stars{
+  color:#f5c518;
+  font-size:1.4rem ;
+  margin-bottom: 10px;
+}
+.comment {
+  font-size: large;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.username{
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.note{
+  margin: 20px;
+  font-weight: bold;
+}
+footer{
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: 40px 20px 20px;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4{
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+  font-family: var(--font-heading);
+}
+
+.footer-section p{
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.footer-bottom{
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.85rem;}
+.footer-social-medias{
+  font-size:x-large;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.whatsapp-float{
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 1500;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover{
+  transform: scale(1.1);
 }

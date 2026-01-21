@@ -8,6 +8,8 @@ menu.addEventListener("click",()=>{
     icon.classList.toggle("open");
 })
 
+
+
 const imagens =[
     "../IMG/img-aboutOne.png",
     "../IMG/img-aboutTwo.png",
@@ -35,3 +37,16 @@ if(currentIndex< 0){
 }
 imgElement.src = imagens[currentIndex]
 });
+
+const comments = document.querySelectorAll(".comments");
+let  current = 0;
+function showNextComment(){
+  
+
+    comments[current].classList.remove('active');
+
+    current = ( current + 1) % comments.length;
+    
+    comments[current].classList.add('active');
+}
+setInterval(showNextComment, 4000);
