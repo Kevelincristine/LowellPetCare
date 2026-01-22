@@ -45,7 +45,8 @@ header{
   align-items: center;
   margin: 10px;
   
-  min-height: 64px;
+  min-height: 80px;
+  height: auto;
   border-radius: 10px;
 
   position: sticky;
