@@ -39,14 +39,35 @@ imgElement.src = imagens[currentIndex]
 });
 
 const comments = document.querySelectorAll(".comments");
-let  current = 0;
-function showNextComment(){
-  
 
-    comments[current].classList.remove('active');
+let visibleCount = 1; 
 
-    current = ( current + 1) % comments.length;
-    
-    comments[current].classList.add('active');
+function updateVisibleCount() {
+  if (window.innerWidth >= 768) {
+    visibleCount = 2;
+  } else {
+    visibleCount = 1;
+  }
 }
-setInterval(showNextComment, 4000);
+
+function showTestimonials() {
+  comments.forEach(c => c.classList.remove("active"));
+
+  for (let i = 0; i < visibleCount; i++) {
+    const index = (currentIndex + i) % comments.length;
+    comments[index].classList.add("active");
+  }
+}
+
+updateVisibleCount();
+showTestimonials();
+
+window.addEventListener("resize", () => {
+  updateVisibleCount();
+  showTestimonials();
+});
+
+setInterval(() => {
+  currentIndex = (currentIndex + visibleCount) % comments.length;
+  showTestimonials();
+}, 5000);
