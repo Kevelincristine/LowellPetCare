@@ -1,4 +1,5 @@
- 🇺🇸 README # Lowell Pet Care – Veterinary Landing Page
+
+ # Lowell Pet Care – Veterinary Landing Page 🇺🇸
 
 This project is a fully responsive landing page developed to represent a modern and professional veterinary clinic.  
 Its main goal is to demonstrate my ability to design and build **clean, efficient, and user-focused landing pages** using HTML, CSS, and JavaScript.
@@ -57,7 +58,7 @@ Developed by **Kevelin Cristine**, a front-end developer focused on creating vis
 
 📫 Feel free to get in touch for freelance work or collaboration opportunities.
 
-🇧🇷 README # Lowell Pet Care – Landing Page Veterinária
+# Lowell Pet Care – Landing Page Veterinária 🇧🇷
 
 Este projeto é uma landing page totalmente responsiva desenvolvida para representar uma clínica veterinária moderna e profissional.  
 O principal objetivo é demonstrar minha capacidade de criar **landing pages bonitas, eficientes e focadas no usuário**, utilizando HTML, CSS e JavaScript.
